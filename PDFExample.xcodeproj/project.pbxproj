@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3316665D2104DED5002E69E6 /* PDFHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3316665C2104DED5002E69E6 /* PDFHelper.swift */; };
+		3316665F210500E5002E69E6 /* ActivityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3316665E210500E5002E69E6 /* ActivityHelper.swift */; };
 		9818C8A020CAD53000C0B3E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9818C89F20CAD53000C0B3E8 /* AppDelegate.swift */; };
 		9818C8A220CAD53000C0B3E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9818C8A120CAD53000C0B3E8 /* ViewController.swift */; };
 		9818C8A520CAD53000C0B3E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9818C8A320CAD53000C0B3E8 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3316665C2104DED5002E69E6 /* PDFHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFHelper.swift; sourceTree = "<group>"; };
+		3316665E210500E5002E69E6 /* ActivityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityHelper.swift; sourceTree = "<group>"; };
 		9818C89C20CAD53000C0B3E8 /* PDFExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9818C89F20CAD53000C0B3E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9818C8A120CAD53000C0B3E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3316665B2104DEB3002E69E6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3316665C2104DED5002E69E6 /* PDFHelper.swift */,
+				3316665E210500E5002E69E6 /* ActivityHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		9818C89320CAD53000C0B3E8 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 		9818C89E20CAD53000C0B3E8 /* PDFExample */ = {
 			isa = PBXGroup;
 			children = (
+				3316665B2104DEB3002E69E6 /* Helper */,
 				9818C89F20CAD53000C0B3E8 /* AppDelegate.swift */,
 				9818C8A120CAD53000C0B3E8 /* ViewController.swift */,
 				9818C8A320CAD53000C0B3E8 /* Main.storyboard */,
@@ -193,19 +207,22 @@
 				TargetAttributes = {
 					9818C89B20CAD53000C0B3E8 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 					9818C8AF20CAD53100C0B3E8 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 9818C89B20CAD53000C0B3E8;
 					};
 					9818C8BA20CAD53100C0B3E8 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 9818C89B20CAD53000C0B3E8;
 					};
 				};
 			};
 			buildConfigurationList = 9818C89720CAD53000C0B3E8 /* Build configuration list for PBXProject "PDFExample" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -256,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3316665F210500E5002E69E6 /* ActivityHelper.swift in Sources */,
+				3316665D2104DED5002E69E6 /* PDFHelper.swift in Sources */,
 				9818C8A220CAD53000C0B3E8 /* ViewController.swift in Sources */,
 				9818C8A020CAD53000C0B3E8 /* AppDelegate.swift in Sources */,
 			);
@@ -434,10 +453,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PDFExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elezov.PDFExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -453,10 +469,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PDFExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elezov.PDFExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -471,11 +484,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PDFExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elezov.PDFExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -491,11 +500,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PDFExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elezov.PDFExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -510,11 +515,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PDFExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elezov.PDFExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -529,11 +530,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PDFExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elezov.PDFExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
